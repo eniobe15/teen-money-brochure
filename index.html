@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Teen Money Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="brochure">
+
+    <!-- COVER -->
+    <section class="page cover">
+        <div class="cover-content">
+            <p class="small-title">A FINANCIAL GUIDE FOR TEENS</p>
+
+            <h1>THE TEEN<br><span>MONEY GUIDE</span></h1>
+
+            <p class="subtitle">
+                Work. Save. Budget. Repeat.
+            </p>
+
+            <p class="intro">
+                Simple money tips to help teens earn money,
+                save for the future, and learn how to budget.
+            </p>
+
+            <button onclick="showPage(2)">OPEN BROCHURE →</button>
+        </div>
+
+        <div class="decor-circle circle1"></div>
+        <div class="decor-circle circle2"></div>
+    </section>
+
+
+    <!-- PAGE 2 -->
+    <section class="page">
+        <div class="page-number">01</div>
+
+        <h2>WHERE CAN TEENS WORK?</h2>
+
+        <p class="description">
+            Getting a job is a great way to earn your own money
+            and gain experience. Here are some jobs teens can look for:
+        </p>
+
+        <div class="jobs">
+
+            <div class="job">
+                <span>🛍️</span>
+                <h3>Retail</h3>
+                <p>Clothing stores, grocery stores, and shops.</p>
+            </div>
+
+            <div class="job">
+                <span>🍔</span>
+                <h3>Restaurants</h3>
+                <p>Fast food, cafés, and restaurants.</p>
+            </div>
+
+            <div class="job">
+                <span>🏊</span>
+                <h3>Recreation</h3>
+                <p>Pools, camps, sports centres, and programs.</p>
+            </div>
+
+            <div class="job">
+                <span>👶</span>
+                <h3>Babysitting</h3>
+                <p>Look after children for families in your community.</p>
+            </div>
+
+            <div class="job">
+                <span>🐶</span>
+                <h3>Pet Sitting</h3>
+                <p>Walk dogs or care for pets while owners are away.</p>
+            </div>
+
+            <div class="job">
+                <span>📚</span>
+                <h3>Tutoring</h3>
+                <p>Help younger students with school subjects.</p>
+            </div>
+
+        </div>
+
+        <div class="tip">
+            💡 <strong>TIP:</strong> Look for jobs with flexible hours so
+            you can balance school, work, and your personal life.
+        </div>
+
+        <button class="next" onclick="showPage(3)">NEXT →</button>
+    </section>
+
+
+    <!-- PAGE 3 -->
+    <section class="page">
+        <div class="page-number">02</div>
+
+        <h2>HOW MUCH SHOULD I SAVE?</h2>
+
+        <p class="description">
+            There is no exact amount every teenager needs to have.
+            A good goal is to build your savings little by little.
+        </p>
+
+        <div class="saving-cards">
+
+            <div class="saving-card">
+                <h3>GRADE 10</h3>
+                <strong>$300+</strong>
+                <p>Start building your savings.</p>
+            </div>
+
+            <div class="saving-card">
+                <h3>GRADE 11</h3>
+                <strong>$750+</strong>
+                <p>Keep saving from jobs and gifts.</p>
+            </div>
+
+            <div class="saving-card">
+                <h3>GRADE 12</h3>
+                <strong>$1,500+</strong>
+                <p>Build a stronger financial cushion.</p>
+            </div>
+
+        </div>
+
+        <div class="calculator">
+            <h3>💰 SAVINGS CALCULATOR</h3>
+
+            <label>How much do you have now?</label>
+            <input type="number" id="current" placeholder="$0">
+
+            <label>How much can you save each month?</label>
+            <input type="number" id="monthly" placeholder="$0">
+
+            <label>How many months?</label>
+            <input type="number" id="months" placeholder="12">
+
+            <button onclick="calculateSavings()">CALCULATE</button>
+
+            <p id="result"></p>
+        </div>
+
+        <button class="next" onclick="showPage(4)">NEXT →</button>
+    </section>
+
+
+    <!-- PAGE 4 -->
+    <section class="page">
+        <div class="page-number">03</div>
+
+        <h2>HOW TO MAKE A BUDGET</h2>
+
+        <p class="description">
+            A budget helps you decide where your money should go
+            instead of wondering where it went.
+        </p>
+
+        <div class="steps">
+
+            <div class="step">
+                <b>1</b>
+                <div>
+                    <h3>Know Your Income</h3>
+                    <p>Figure out how much money you receive each month.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <b>2</b>
+                <div>
+                    <h3>List Your Expenses</h3>
+                    <p>Write down everything you spend money on.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <b>3</b>
+                <div>
+                    <h3>Separate Needs & Wants</h3>
+                    <p>Needs are important. Wants are things you can live without.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <b>4</b>
+                <div>
+                    <h3>Set a Savings Goal</h3>
+                    <p>Choose an amount you want to save each month.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <b>5</b>
+                <div>
+                    <h3>Track Your Spending</h3>
+                    <p>Check your budget regularly to stay on track.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="formula">
+            INCOME − EXPENSES = MONEY LEFT
+        </div>
+
+        <button class="next" onclick="showPage(5)">NEXT →</button>
+    </section>
+
+
+    <!-- PAGE 5 -->
+    <section class="page">
+        <div class="page-number">04</div>
+
+        <h2>SMART MONEY HABITS</h2>
+
+        <p class="description">
+            Small habits can make a big difference over time.
+        </p>
+
+        <div class="habits">
+
+            <div class="habit">
+                <span>💵</span>
+                <h3>EARN</h3>
+                <p>Look for ways to earn money through jobs or side work.</p>
+            </div>
+
+            <div class="habit">
+                <span>🏦</span>
+                <h3>SAVE</h3>
+                <p>Put some of your money aside instead of spending it all.</p>
+            </div>
+
+            <div class="habit">
+                <span>🛒</span>
+                <h3>SPEND SMART</h3>
+                <p>Compare prices and think before making purchases.</p>
+            </div>
+
+            <div class="habit">
+                <span>🎯</span>
+                <h3>SET GOALS</h3>
+                <p>Have something specific you are saving your money for.</p>
+            </div>
+
+        </div>
+
+        <div class="quote">
+            “The goal isn't to never spend money.
+            It's to learn how to manage it.”
+        </div>
+
+        <button class="next" onclick="showPage(6)">NEXT →</button>
+    </section>
+
+
+    <!-- PAGE 6 -->
+    <section class="page final-page">
+        <div class="page-number">05</div>
+
+        <h2>YOUR MONEY. YOUR FUTURE.</h2>
+
+        <p class="description">
+            Learning how to manage money now can help you become
+            more confident with your finances in the future.
+        </p>
+
+        <div class="remember">
+            <h3>REMEMBER:</h3>
+
+            <p>💼 Earn it</p>
+            <p>🏦 Save it</p>
+            <p>📊 Budget it</p>
+            <p>🛍️ Spend it wisely</p>
+        </div>
+
+        <div class="challenge">
+            <h3>💗 MONEY CHALLENGE</h3>
+
+            <label>
+                <input type="checkbox">
+                Track everything you spend for one week
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Save a specific amount of money
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Make your own monthly budget
+            </label>
+
+            <label>
+                <input type="checkbox">
+                Find one way to earn extra money
+            </label>
+        </div>
+
+        <p class="ending">
+            Every dollar saved is a step toward your future! ✨
+        </p>
+
+        <button onclick="showPage(1)">← BACK TO COVER</button>
+    </section>
+
+</div>
+
+
+<!-- NAVIGATION -->
+<div class="navigation">
+    <button onclick="previousPage()">←</button>
+
+    <div id="dots">
+        <span onclick="showPage(1)"></span>
+        <span onclick="showPage(2)"></span>
+        <span onclick="showPage(3)"></span>
+        <span onclick="showPage(4)"></span>
+        <span onclick="showPage(5)"></span>
+        <span onclick="showPage(6)"></span>
+    </div>
+
+    <button onclick="nextPage()">→</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
